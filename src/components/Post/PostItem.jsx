@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 import postImg from '../../assets/images/contemplative-reptile.jpg'
 import MyButton from '../theme/button/MyButton'
 
@@ -14,6 +15,7 @@ const PostItem = ({post, remove}) => {
       </div>
       <div className='post-item-action'>
         <MyButton onClick={() => remove(post.id)}>Remove</MyButton>
+        <Link to={`${post.id}`}>Open</Link>
       </div>
     </div>
   )
