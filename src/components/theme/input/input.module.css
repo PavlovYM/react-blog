@@ -1,0 +1,10 @@
+.MyInput{
+  width: 100%;
+  display: block;
+  padding: .3rem;
+  border: 1px solid var(--dark);
+  color: var(--dark);
+  background-color: inherit;
+  outline: none;
+  margin-bottom: .3rem;
+}

@@ -1,0 +1,15 @@
+.MyButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--dark);
+  color: var(--dark);
+  padding: .3rem 1rem;
+  cursor: pointer;
+  transition: all .3s ease-in;
+  font-weight: bold;
+}
+.MyButton:hover, .MyButton:focus{
+  background-color: var(--dark);
+  color: var(--white);
+}
