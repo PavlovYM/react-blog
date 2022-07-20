@@ -1,0 +1,26 @@
+.Loader{
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.8);
+}
+.LoaderItem{
+  width: 80px;
+  height: 80px;
+  border: 2px dashed var(--primary);
+  border-radius: 50%;
+  animation: loader infinite 3s linear;
+}
+@keyframes loader {
+  from{
+    transform: rotate(0deg);
+  } to {
+    transform: rotate(360deg);
+  }
+}

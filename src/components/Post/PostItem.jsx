@@ -1,5 +1,6 @@
 import React from 'react'
 import postImg from '../../assets/images/contemplative-reptile.jpg'
+import MyButton from '../theme/button/MyButton'
 
 const PostItem = ({post, remove}) => {
   return (
@@ -12,7 +13,7 @@ const PostItem = ({post, remove}) => {
         <p>{post.body}</p>
       </div>
       <div className='post-item-action'>
-        <button onClick={() => remove(post.id)}>remove</button>
+        <MyButton onClick={() => remove(post.id)}>Remove</MyButton>
       </div>
     </div>
   )
